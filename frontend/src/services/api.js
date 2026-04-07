@@ -18,6 +18,7 @@ async function request(path, options = {}) {
 }
 
 export function fetchProjectState() {
+  console.log("API_BASE_URL", API_BASE_URL);
   return request("/project-state");
 }
 
